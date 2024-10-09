@@ -29,7 +29,7 @@ Write a countdown timer that counts down from a number the user inputs to 1. The
 3. Print the countdown until it reaches 1.
 
 **Concepts Used:**  
-- `input()`, `while` loop, `print()`
+- `input()`, `while` 'loop', `print()`
 
 ---
 
