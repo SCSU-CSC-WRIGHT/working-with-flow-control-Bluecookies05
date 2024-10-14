@@ -1,25 +1,26 @@
 import random 
 
 ### ================ Lab 1 =================
-random_number = int(input(" guess a number between 1-10:  "))
+number = random.randint(1, 10)  
 
-number = random.randbint (1-10)
-
-attempts = 3
-count = 1
-max_number = 10
+attempts = 3  
+count = 1  
 
 while count <= attempts:
-    random_number = int(input(" guess a number between 1-10:  "))
-if random_number>number:
-    print ("too hight")
-elif random_number<number:
-    print ("too low")
-else:
-    print ("correct!!")
-
-if attempts>3:
-    print ("STOP! YOU ALREADY LOST")
+    random_number = int(input("Guess a number between 1-10: "))
+    
+    if random_number > number:
+        print("Too high")
+    elif random_number < number:
+        print("Too low")
+    else:
+        print("Correct!")
+        break  
+    
+    count += 1  # Increment the attempt count
+    
+if count > attempts:  
+    print("STOP! YOU ALREADY LOST. The correct number was:", number)
 
 ### ================ Lab 1 =================
 
