@@ -36,11 +36,16 @@ while countdown_number!= 0:
 
 ### ================ Lab 3 ================= 
 
-user_number = int(input(" Be our guest and pick a number:  "))
+user_number = int(input("Please enter a positive integer: "))
 
 total = 0
-for i in range (1,user_number+1):
-    total+=i
-print(total)
+
+if user_number < 1:
+    print("Please enter a positive integer greater than 0.")
+else:
+    for i in range(1, user_number + 1):
+        total += i
+
+    print("The sum of all numbers from 1 to", user_number, "is:", total)
 
 ### ================ Lab 3 =================
